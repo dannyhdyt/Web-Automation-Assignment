@@ -5,7 +5,7 @@
         <classes>
             <class name="test.FlightPageTest">
                 <methods>
-                    <include name="successHomePage"/>
+                    <include name="successFlightPage"/>
                 </methods>
             </class>
         </classes>

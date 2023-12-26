@@ -16,7 +16,14 @@ public class FlightPage extends BasePage{
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div[2]/div/div[2]/p/span")
     WebElement txtBerhasilMasuk;
 
+    @FindBy(xpath = "//*[@id=\"listing-id\"]/div/div[2]/div/div[1]/div[1]/div[2]/div[2]/div/div/div")
+    WebElement columnPrice;
+
     public String getFlightText(){
         return getText(txtBerhasilMasuk);
+    }
+
+    public String getPrice(){
+        return getText(columnPrice);
     }
 }
