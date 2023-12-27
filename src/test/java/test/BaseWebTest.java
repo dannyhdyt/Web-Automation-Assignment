@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 import java.util.Arrays;
@@ -27,6 +29,11 @@ public class BaseWebTest {
         driver.get().manage().window().maximize();
         driver.get().get("https://www.makemytrip.com/");
         explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(60)));
+    }
 
+    @AfterMethod
+    public void closeBrowser(){
+        //Close Browser
+        driver.get().quit();
     }
 }

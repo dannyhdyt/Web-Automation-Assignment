@@ -80,7 +80,7 @@ Add the following to your `pom.xml`
   </profiles>
 
 ```
-## Directory Structure:
+## Directory Structure
 - `page`: Directory for classes representing different function
 - `FlightPageTest.java`: Contains actual test cases related to the functionalities, also executing tests.
 
@@ -100,3 +100,14 @@ Run the `FlightPageTest.java` file directly from the IDE, I'm using [IntelliJ ID
 ```bash
 mvn test -Pselenium
 ```
+
+## Report
+Navigate to the `surefire-report` directory, and you will see `emailable-report.html` and `index.html` that have been created, for example:
+```
+target
+└── surefire-reports
+    ├── emailable-report.html
+    ├── index.html
+```
+![Screenshot_2](https://github.com/dannyhdyt/Web-Automation-Assignment/assets/153344198/6c8a2975-322a-47ee-9f21-16412a63409f)
+![Screenshot_1](https://github.com/dannyhdyt/Web-Automation-Assignment/assets/153344198/e3f959a7-5d76-4b9f-b433-75e4bed232a7)

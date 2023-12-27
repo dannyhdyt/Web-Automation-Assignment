@@ -23,7 +23,7 @@ public class FlightPage extends BasePage{
         return getText(txtBerhasilMasuk);
     }
 
-    public String getTopPrice(){
+    public String getPrice(){
         return getText(columnTopPrice);
     }
 }
