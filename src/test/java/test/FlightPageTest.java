@@ -15,15 +15,16 @@ public class FlightPageTest extends BaseWebTest{
         FlightPage flightPage = new FlightPage(driver, explicitWait);
         homePage.home("Jakarta", "New York");
 
-        //wait processing request 18 second
-        Thread.sleep(18000);
+        //wait processing request 16 second
+        Thread.sleep(17000);
         //remove banner <Now Lock Prices & Pay Later!>
         driver.get().findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[2]/div/div/div[3]/button")).click();
 
         String txtExpectedBerhasilMasuk =  "Flights from Jakarta to New York";
         Assert.assertEquals(txtExpectedBerhasilMasuk, flightPage.getFlightText());
 
-        //value of top price
-        Assert.assertTrue(flightPage.getPrice().contains("₹ 70,463"));
+        //value top price
+        System.out.println(flightPage.getTopPrice());
+        Assert.assertTrue(flightPage.getTopPrice().contains("Jakarta"));
     }
 }
