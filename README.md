@@ -1,6 +1,6 @@
 # OOP Web Automation Assignment
 
-This repository houses a comprehensive web automation project that applies Object-Oriented Programming (OOP) principles and utilizes the TestNG framework, Maven for dependency management, and the Selenium automation tool. The project aims to conduct automated tests on the [MakeMyTrip](https://www.makemytrip.com/) website to extract the top price information.
+This repository is a web automation project that applies Object-Oriented Programming (OOP) principles and utilizes the TestNG framework, Maven for dependency management, and the Selenium automation tool. The project aims to conduct automated tests on the [MakeMyTrip](https://www.makemytrip.com/) website to extract the top price information.
 
 ## Overview
 
